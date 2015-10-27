@@ -1,0 +1,47 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+$visual-grid:true;
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+
+input{
+  @include span-columns(1 of 4);
+  @include omega(4n);
+  height:64px;
+  border: 1px solid #86C37C;
+  margin-right: 0;
+  background-color: #64B255;
+  color:#fff;
+    &:focus {
+      outline: 0; }
+    &:hover{
+      background-color: #85C07B;
+    }
+}
+
+#result{
+@include span-columns(2.44 of 4);
+background-color: #64B255;
+text-align: right;
+color: #fff;
+&:focus {
+  outline: 0; }
+}
+
+main{
+  @include outer-container;
+
+
+}
+
+.container{
+  @include span-columns(6 of 12);
+  @include shift(1);
+
+
+}
+.line1{
+  @include omega();
+}
+.line2{
+  @include omega();
+}
